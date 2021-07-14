@@ -1,0 +1,61 @@
+
+    :root {
+        --black: #130f0d;
+        --primary: hsl(32, 98%, 56%);
+        --white: #f0f0f9;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    *, 
+    button,
+    input {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+
+        background-color: black;
+        color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+
+        background-color: hsl(32, 89%,  8%);
+
+        box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2); 
+        padding: 16px;
+    }
+
+    #paginate {
+        width: 100%;
+
+        margin: 32px auto;
+    }
+
+    #paginate .item {
+        border-bottom: 1px solid hsl(32, 98%, 12%);
+        padding: 16px 32px;
+    }
+
+    #paginate .item:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    #paginate #pagination{
+        display: flex;
+        align-items: center!important;
+        justify-content: center!important;
+
+        margin-top: 8px;
+    }
+    #paginate #pagination div{
+        margin: 0px 2px;
+    }

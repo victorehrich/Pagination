@@ -19,12 +19,12 @@ export class AppComponent {
   }
   itensShow(i:number, tamanhoShow:number){
     let shower:string[] = [] ;
+
     
     for(i; i < tamanhoShow; i++){
       shower[i]= this.itensTotal(i);
-    }
+    } 
     console.log(shower,tamanhoShow)
-    tamanhoShow += tamanhoShow;
     return shower;
   }
 
@@ -33,6 +33,12 @@ export class AppComponent {
   }
   prevItem(){
     this.x--;
+  }
+  firstItem(){
+    this.x = 1;
+  }
+  lastItem(){
+    this.x = 12/3;
   }
   x = 1;
   valueReturner(){

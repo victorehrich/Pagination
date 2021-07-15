@@ -13,13 +13,13 @@
     </ul>
     
     <div id="pagination">
-      <div class="first">&#171;</div>
+      <div class="first" (click) = firstItem()>&#171;</div>
       <div class="prev" (click) = 'prevItem()'><</div>
       <div class="numbers">
-        <div [ngClass] ="valueReturner()">1</div>
+        <div [ngClass] ="valueReturner()">{{valueReturner().value}}</div>
       </div>
       <div class="next" (click) = nextItem()>></div>
-      <div class="last">&#187;</div>
+      <div class="last"(click) = lastItem()>&#187;</div>
     </div>
   </section>
 </body>

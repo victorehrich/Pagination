@@ -37,15 +37,14 @@
     #paginate {
         width: 100%;
 
-        margin: 32px auto;
     }
 
-    #paginate .item {
+    #paginate li {
         border-bottom: 1px solid hsl(32, 98%, 12%);
         padding: 16px 32px;
     }
 
-    #paginate .item:hover {
+    #paginate li:hover {
         background-color: rgba(255, 255, 255, 0.04);
     }
 
@@ -53,9 +52,32 @@
         display: flex;
         align-items: center!important;
         justify-content: center!important;
-
+        background-color: black;
         margin-top: 8px;
     }
     #paginate #pagination div{
+        cursor:pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
         margin: 0px 2px;
+    }
+
+    #paginate #pagination div:not(.numbers),
+    #paginate #pagination div .numbers div{
+       width: 40px;
+       height: 40px;
+       border: solid 2px white;
+       border-radius: 10px;
+       
+    }
+    #paginate #pagination div:not(.numbers):hover,
+    #paginate #pagination div .numbers div:hover{
+       width: 40px;
+       height: 40px;
+       border: solid 2px black;
+       border-radius: 10px;
+       background-color: white;
+        color: black;
     }

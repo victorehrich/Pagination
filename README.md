@@ -1,7 +1,7 @@
 # Pagination
-apenas uma paginação feita em angular.
+Apenas uma paginação feita em angular.
 
-foi utilizado ngFor para mostrar os itens na função itensShow(), que são gerados pela função itensTotal().
+Foi utilizado ngFor para mostrar os itens na função itensShow(), que são gerados pela função itensTotal().
 
 A quatidade de itens a serem mostrados foi setada para 3.
 
